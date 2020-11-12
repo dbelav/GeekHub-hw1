@@ -1,0 +1,49 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .header_block {
+        background-color: rgb(95, 95, 95);
+        height: 150px;
+    }
+
+    .header_block_1 {
+        flex-basis: 15%;
+    }
+
+    .header_block_2 {
+        flex-basis: 35%;
+        margin: 0 20px;
+    }
+
+    .header_block_3 {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 15px;
+
+        span,
+        a {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .email,
+        .website {
+            transition: 0.3s;
+
+            &:hover {
+                letter-spacing: 2px;
+            }
+        }
+
+        .email {
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    }
+}
