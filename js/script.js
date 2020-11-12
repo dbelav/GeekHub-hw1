@@ -44,7 +44,7 @@ const arraySum = arr => {
             sum += arr[i]
         }
     }
-    console.log(sum)
+    return sum
 }
 arraySum([NaN, 1, undefined, 3, 5, -3])
 
