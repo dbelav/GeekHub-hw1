@@ -2,7 +2,7 @@
 const arrayMax = arr => {
     let max
     for (let i = 0; i < arr.length; i++) {
-        if (typeof arr[i] === 'number' && isNaN(arr[i]) === false) {
+        if (typeof arr[i] === 'number' && !isNaN(arr[i])) {
             if (typeof(max) === 'undefined') {
                 max = arr[i]
             }
@@ -21,7 +21,7 @@ arrayMax([NaN, 1, undefined, 3, 5, -3])
 const arrayMin = arr => {
     let min
     for (let i = 0; i < arr.length; i++) {
-        if (typeof arr[i] === 'number' && isNaN(arr[i]) === false) {
+        if (typeof arr[i] === 'number' && !isNaN(arr[i])) {
             if (typeof(min) === 'undefined') {
                 min = arr[i]
             }
@@ -40,7 +40,7 @@ arrayMin([NaN, 1, undefined, 3, 5, -3])
 const arraySum = arr => {
     let sum = 0
     for (let i = 0; i < arr.length; i++) {
-        if (typeof arr[i] === 'number' && isNaN(arr[i]) === false) {
+        if (typeof arr[i] === 'number' && !isNaN(arr[i])) {
             sum += arr[i]
         }
     }
